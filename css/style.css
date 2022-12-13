@@ -135,3 +135,28 @@ h1, h2 {
     /* flex-basis: 33.3%; */
     flex-basis: 200px
 }
+
+/* 9 */
+
+/* .d-flex-9 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex-9 .box {
+    flex-basis: calc(33.3% - 1rem);
+} */
+
+.d-flex-9 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex-9 .box:nth-child(1) {
+    flex-basis: calc(50% - 1rem);
+}
+
+.d-flex-9 .box:nth-child(2),
+.d-flex-9 .box:nth-child(3) {
+    flex-basis: calc(25% - 1rem);
+}
